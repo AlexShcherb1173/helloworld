@@ -1,0 +1,95 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPspyjyY4TW+oMI9KuyQJIf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AlexShcherb1173/helloworld/blob/master/%D0%9A%D1%83%D1%80%D1%811_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B59\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 92,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OY4XGzYJsdnT",
+        "outputId": "c3f6590c-5232-4d54-b84a-9ec19910209d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'fruit': 140.0, 'veggie': 145.0, 'sweet': 287.5}\n"
+          ]
+        }
+      ],
+      "source": [
+        "products = [\n",
+        "    {\"name\": \"Apple\", \"category\": \"fruit\", \"price\": 120, \"quantity\": 10},\n",
+        "    {\"name\": \"Banana\", \"category\": \"fruit\", \"price\": 90, \"quantity\": 15},\n",
+        "    {\"name\": \"Avocado\", \"category\": \"fruit\", \"price\": 200, \"quantity\": 5},\n",
+        "    {\"name\": \"Tomato\", \"category\": \"veggie\", \"price\": 100, \"quantity\": 20},\n",
+        "    {\"name\": \"Broccoli\", \"category\": \"veggie\", \"price\": 300, \"quantity\": 8},\n",
+        "    {\"name\": \"Carrot\", \"category\": \"veggie\", \"price\": 100, \"quantity\": 25},\n",
+        "    {\"name\": \"Cookie\", \"category\": \"sweets\", \"price\": 200, \"quantity\": 12, \"brand\": \"ABC\"},\n",
+        "    {\"name\": \"Donut\", \"category\": \"sweets\", \"price\": 300, \"quantity\": 7, \"brand\": \"XYZ\"},\n",
+        "    {\"name\": \"Cake\", \"category\": \"sweets\", \"price\": 400, \"quantity\": 3, \"brand\": \"DEF\", \"discount\": 10},\n",
+        "    {\"name\": \"Orange\", \"category\": \"fruit\", \"price\": 150, \"quantity\": 18},\n",
+        "    {\"name\": \"Lettuce\", \"category\": \"veggie\", \"price\": 80, \"quantity\": 30, \"organic\": True},\n",
+        "    {\"name\": \"Chocolate\", \"category\": \"sweets\", \"price\": 250, \"quantity\": 10, \"brand\": \"GHI\", \"flavor\": \"Dark\"}\n",
+        "]\n",
+        "\n",
+        "def average_price_per_category(products):\n",
+        "  price_fr = 0\n",
+        "  price_vg = 0\n",
+        "  price_sw = 0\n",
+        "  count_fr = 0\n",
+        "  count_vg = 0\n",
+        "  count_sw = 0\n",
+        "  dict_avg = {}\n",
+        "  for product in products:\n",
+        "      if product.get(\"category\") == \"fruit\":\n",
+        "        price_fr += product.get(\"price\")\n",
+        "        count_fr += 1\n",
+        "      elif product.get(\"category\") == \"veggie\":\n",
+        "        price_vg += product.get(\"price\")\n",
+        "        count_vg += 1\n",
+        "      elif product.get(\"category\") == \"sweets\":\n",
+        "        price_sw += product.get(\"price\")\n",
+        "        count_sw += 1\n",
+        "  if count_fr > 0:\n",
+        "    dict_avg[\"fruit\"] = round(price_fr/count_fr, 1)\n",
+        "  if count_vg > 0:\n",
+        "    dict_avg[\"veggie\"] = round(price_vg/count_vg, 1)\n",
+        "  if count_sw > 0:\n",
+        "    dict_avg[\"sweets\"] = round(price_sw/count_sw, 1)\n",
+        "\n",
+        "  return dict_avg\n",
+        "\n",
+        "print(average_price_per_category(products))"
+      ]
+    }
+  ]
+}
