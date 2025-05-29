@@ -1,0 +1,97 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP3Zm+oBW/V8u5r6UvfC+z+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AlexShcherb1173/helloworld/blob/master/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%B0%D1%8F%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OY4XGzYJsdnT",
+        "outputId": "bcf09c85-e2a3-4b77-95b9-5ec91764dd65"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            ".--- .- ...- .-\n",
+            "1\n",
+            "0\n",
+            "1\n",
+            "1\n",
+            "1\n",
+            "2\n",
+            "1\n",
+            "3\n",
+            "1\n",
+            "3\n",
+            "2\n",
+            "3\n",
+            "2\n",
+            "4\n",
+            "2\n",
+            "4\n",
+            "3\n",
+            "4\n",
+            "4\n",
+            "4\n",
+            "5\n",
+            "4\n",
+            "5\n",
+            "5\n",
+            "5\n",
+            "5\n",
+            "6\n",
+            "5\n",
+            "6\n",
+            "6\n",
+            "12\n"
+          ]
+        }
+      ],
+      "source": [
+        "morse_string = input()\n",
+        "def count_morse_characters(morse_string):\n",
+        "    dots = 0\n",
+        "    dash = 0\n",
+        "    for i in range(len(morse_string)):\n",
+        "      if morse_string[i] == '.':\n",
+        "        dots += 1\n",
+        "      if morse_string[i] == '-':\n",
+        "                 dash += 1\n",
+        "      print(dots)\n",
+        "      print(dash)\n",
+        "    return dots+dash\n",
+        "\n",
+        "print(count_morse_characters(morse_string))"
+      ]
+    }
+  ]
+}
