@@ -1,52 +1,4 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyPnXQm9lVC5qgtUS7b5hpYV",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/AlexShcherb1173/helloworld/blob/master/%D0%9A%D1%83%D1%80%D1%811%D0%97%D0%B0%D0%B45\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": 51,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "OY4XGzYJsdnT",
-        "outputId": "5f3bdda1-c56a-4d73-a4b4-16c59e5e9aef"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "120\n",
-            "[{'name': 'Apple', 'category': 'fruit', 'price': 120, 'quantity': 10}, {'name': 'Banana', 'category': 'fruit', 'price': 90, 'quantity': 15}, {'name': 'Tomato', 'category': 'veggie', 'price': 100, 'quantity': 20}, {'name': 'Carrot', 'category': 'veggie', 'price': 100, 'quantity': 25}, {'name': 'Lettuce', 'category': 'veggie', 'price': 80, 'quantity': 30, 'organic': True}]\n"
-          ]
-        }
-      ],
-      "source": [
+
         "products = [\n",
         "    {\"name\": \"Apple\", \"category\": \"fruit\", \"price\": 120, \"quantity\": 10},\n",
         "    {\"name\": \"Banana\", \"category\": \"fruit\", \"price\": 90, \"quantity\": 15},\n",
@@ -72,6 +24,4 @@
         "\n",
         "print(filter_products_by_price(products, max_price))"
       ]
-    }
-  ]
-}
+    
