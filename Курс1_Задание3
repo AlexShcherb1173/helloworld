@@ -1,51 +1,4 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyNjH2DhcsYinNJ8JpkPwzpa",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/AlexShcherb1173/helloworld/blob/master/%D0%9A%D1%83%D1%80%D1%811%D0%97%D0%B0%D0%B43\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": 23,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "OY4XGzYJsdnT",
-        "outputId": "58103c76-652d-4e59-abbb-b0a24afdc6b4"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "----- .---- .\n",
-            "01e\n"
-          ]
-        }
-      ],
+
       "source": [
         "morse = {\"0\": \"-----\", \"1\": \".----\", \"2\": \"..---\", \"3\": \"...--\", \"4\": \"....-\", \"5\": \".....\", \"6\": \"-....\",\n",
         "             \"7\": \"--...\", \"8\": \"---..\", \"9\": \"----.\", \"a\": \".-\", \"b\": \"-...\", \"c\": \"-.-.\", \"d\": \"-..\", \"e\": \".\",\n",
@@ -67,6 +20,4 @@
         "  return decoded_word\n",
         "print(morse_decode(morse, morse_str))"
       ]
-    }
-  ]
-}
+    
